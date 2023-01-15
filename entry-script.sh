@@ -9,6 +9,8 @@ sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinu
 sudo yum -y install terraform
 sudo touch ~/.bashrc
 sudo terraform -install-autocomplete
+sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+sudo yum install mysql
 sudo amazon-linux-extras install docker
 sudo service docker start
 sudo usermod -a -G docker ec2-user
